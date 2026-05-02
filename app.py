@@ -14,6 +14,7 @@ st.set_page_config(page_title="Cyberbullying Detector", page_icon="🛡️", lay
 @st.cache_resource
 def download_nltk_data():
     nltk.download('punkt', quiet=True)
+    nltk.download('punkt_tab', quiet=True)
     nltk.download('stopwords', quiet=True)
     nltk.download('wordnet', quiet=True)
     nltk.download('averaged_perceptron_tagger', quiet=True)
